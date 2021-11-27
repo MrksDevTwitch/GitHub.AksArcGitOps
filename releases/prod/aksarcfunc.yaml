@@ -1,0 +1,20 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: aksarcfunc
+  namespace: prod
+spec:
+  releaseName: aksarcfunc-prod
+  chart:
+    git: https://github.com/MrksDevTwitch/GitHub.AksArcGitOps.git
+    path: charts/aksarcfunc
+    ref: master
+  values:
+    image:
+      #repository: azurearcdemoregistry.azurecr.io/samples/functionapp
+      repository: liorkamrat/hello-arc
+      tag: latest
+    replicaCount: 3
+    env:
+      name: MESSAGE
+      value: Hello from Arc!
