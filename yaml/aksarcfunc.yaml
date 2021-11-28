@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: aksarcfunc
-        image: liorkamrat/hello-arc:latest
-        #image: mrksdev/samples-functionapp
+        #image: liorkamrat/hello-arc:latest
+        image: mrksdev/samples-functionapp
         ports:
         - containerPort: 8080

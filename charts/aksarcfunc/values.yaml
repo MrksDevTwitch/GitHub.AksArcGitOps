@@ -5,15 +5,15 @@
 replicaCount: 3
 
 image:
-  #repository: azurearcdemoregistry.azurecr.io/samples/functionapp
-  repository: liorkamrat/hello-arc
+  repository: mrksdev/samples-functionapp
+  #repository: liorkamrat/hello-arc
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
 
-env:
-  name: MESSAGE
-  value: Helm chart testing!
+#env:
+#  name: MESSAGE
+#  value: Helm chart testing!
 
 imagePullSecrets: []
 #- name: regsecret-func

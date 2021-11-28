@@ -11,10 +11,9 @@ spec:
     ref: master
   values:
     image:
-      #repository: azurearcdemoregistry.azurecr.io/samples/functionapp
-      repository: liorkamrat/hello-arc
+      repository: mrksdev/samples-functionapp
       tag: latest
     replicaCount: 3
-    env:
-      name: MESSAGE
-      value: Hello from Arc!
+    #env:
+    #  name: MESSAGE
+    #  value: Hello from Arc!
